@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: whitesmoke;
+}
+
+.contenedor {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+.contenedor .cartas {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    max-width: 100%;
+    height: 300px;
+    background: white;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.contenedor .cartas:hover {
+    height: 400px;
+}
+
+.contenedor .cartas .caja-img {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #000000;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.contenedor .cartas:hover .caja-img {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor .cartas .caja-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenedor .cartas .contenido {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 35px;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+    
+}
+
+.contenedor .cartas:hover .contenido {
+    top: 130px;
+    height: 250px;
+    
+}
+
+.contenedor .cartas .contenido h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--clr);
+}
+
+.contenedor .cartas .contenido p {
+    color: #333333;
+    text-decoration: none;
+}
+
+.contenedor .cartas .contenido li {
+  list-style-type: none; 
+  
+}
+
+.contenedor .cartas .contenido a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    background: var(--clr);
+    color: white;
+    font-weight: 500;
+}
+
+.contenedor .cartas .contenido a:hover {
+    opacity: 0.8;
+    background-color: #000000;
+    color: aqua;
+}
+
+@media (max-width: 480px) {
+    .contenedor .cartas {
+        width: 230px;
+        border-radius: 15px;
+    }
+
+    .contenedor .cartas .caja-img {
+        width: 185px;
+        border-radius: 10px;
+    }
+
+    .contenedor .cartas .contenido p {
+        font-size: 0.8rem;
+    }
+
+    .contenedor .cartas .contenido a {
+        font-size: 0.9rem;
+    }
+}
+
+
+.h1 {
+    text-align: center;
+}
+
+.h12 {
+    text-align: center;
+    top: -150px;
+}
+
+
+
+.container {
+    position: relative;
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    
+    padding-top: 100px;
+}
+
+.card {
+    flex: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card img {
+    object-fit: cover;
+    filter: grayscale(1);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.card:hover {
+    flex: 10;
+    transition: 0.5s;
+}
+
+.card:hover img {
+    filter: none;
+    transition: 0.5s;
+}
+
+.imgps4 {
+    background-image: url(img/PS4_juegos.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 709px;
+
+}
+
+.texth2 {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    
+    flex-wrap: wrap;
+
+}
+
+
+.navbar {
+    background-color: #0056b3; /* Azul */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Contenedor del logo y texto */
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Estilos del logo */
+  .logo {
+    height: 40px;
+    width: auto; /* Mantiene la proporción */
+    margin-right: 10px;
+  }
+  
+  /* Estilos del nombre */
+  .brand-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+  }
+
+
+  .card-container1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 50px;
+    align-self: center;
+}
+  
+  .card1 {
+    margin: 20px 40px 40px 20px;
+    width: 300px;
+    height: 400px;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: 0.5s;
+  }
+  
+  .card1 .front {
+    border: solid 10px whitesmoke;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: 0.5s;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+      5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    
+  }
+
+  .card1 img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 100%; /* Asegura que la imagen ocupe todo el alto del contenedor */
+    object-fit: cover; /* Hace que la imagen se ajuste perfectamente al contenedor */
+    border-radius: 10px; /* Para mantener el diseño redondeado, si corresponde */
+}
+  
+  .card1:hover .front {
+    transform: rotateY(-180deg);
+  }
+  
+  .card1 .back {
+    border: solid 10px whitesmoke;
+    width: 100%;
+    height: 100%;
+    background: #b40303;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    transition: 0.5s;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+      5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  
+  
+  }
+  
+  .card1:hover .back {
+    transform: rotateY(0deg);
+  }
+  
+  .card1 .back .details {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .card1 .back .details .caption {
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+
+  
+  .card1 .back .details .caption,
+  h2,
+  span {
+    color: whitesmoke;
+  }
+  
+  .social-icon {
+    padding: 10px;
+  }
+  
+  .social-icon a {
+    display: inline-block;
+    width: 36px;
+    background: #333;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    border-radius: 50%;
+    transition: 0.5s;
+  }
+  
+  .social-icon a .fab {
+    line-height: 36px;
+  }
+  
+  .social-icon a:hover {
+    background: rgb(104, 240, 215);
+  }
+  
+  .social-icon a:hover i {
+    transition: 0.5s;
+    color: #333;
+  }
+
+
+  .section {
+    padding: 20px;
+    background-color: rgb(15, 5, 155);
+    margin: 20px 0;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+}
+.section img {
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid rgb(22, 0, 102);
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px;
+    background-color: rgb(64, 79, 206);
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: rgb(19, 0, 128);
+}
