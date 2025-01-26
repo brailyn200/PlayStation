@@ -406,6 +406,7 @@ form button:hover {
     background-color: rgb(19, 0, 128);
 }
 
+
 footer {
   background-color:rgb(15, 5, 155) ;
   color: white;
@@ -416,3 +417,30 @@ footer {
   width: 100%;
   margin-top: -20px;
 }
+
+
+.nav-bar {
+  display: flex; /* Coloca los elementos en fila horizontal */
+  justify-content: flex-end; /* Alinea los enlaces a la derecha */
+  list-style: none; /* Elimina las viñetas */
+  margin: 0;
+  padding: 0;
+  margin-left: 550px;
+}
+
+.nav-bar li {
+  margin-left: 20px; /* Añade espacio entre los enlaces */
+}
+
+.nav-bar a {
+  text-decoration: none; /* Elimina subrayado */
+  color: white; /* Coloca los enlaces en color blanco */
+  font-weight: bold;
+  font-size: 16px; /* Ajusta el tamaño del texto */
+  transition: color 0.3s ease; /* Efecto de transición para hover */
+}
+
+.nav-bar a:hover {
+  color: #00bcd4; /* Cambia el color al pasar el mouse */
+}
+
